@@ -1,0 +1,23 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #e60012;
+}
+
+/* quiz page */
+
+.page-heading h1 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: black 1px 1px 1px;
+    color: white;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+}
+
