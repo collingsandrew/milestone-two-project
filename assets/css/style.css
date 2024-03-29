@@ -112,3 +112,24 @@ body {
     margin-bottom: 5px;
     color: white;
 }
+
+/* media queries */
+
+/* resizing the game board on larger devices */
+
+@media (min-width: 767px) {
+    .cards-board {
+        width: 500px;
+        max-width: 500px;
+        height: 500px;
+    }
+
+    .card {
+        width: 110px;
+        height: 110px;
+    }
+
+    .game-stats {
+        width: 500px;
+    }
+}
