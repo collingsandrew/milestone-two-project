@@ -17,6 +17,12 @@ body {
 
 /* quiz page */
 
+.page-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .page-heading h1 {
     font-family: 'Catamaran', sans-serif;
     font-size: 40px;
