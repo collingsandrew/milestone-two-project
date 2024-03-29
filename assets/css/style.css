@@ -21,12 +21,28 @@ body {
     text-transform: uppercase;
     text-shadow: black 1px 1px 1px;
     color: white;
-    margin: 1px;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
 }
 
 /* memory game board */
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    max-width: 100%;
+    color: white;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
 
 .cards-board {
     width: 100%;
@@ -55,20 +71,3 @@ body {
     border-radius: 5px;
     box-shadow: 1px 1px 1px;
 }
-
-
-/* .cards-board {
-    background-color: #0065b3;
-    max-width: 600px;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-  }
-  
-.card {
-    width: 24%;
-    height: 24%;
-    color: white;
-  } */
