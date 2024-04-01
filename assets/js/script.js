@@ -7,3 +7,16 @@ function shuffleCards(cards) {
         [cards[i], cards[j]] = [cards[j], cards[i]];
     }
 }
+
+// function to use the shuffledCards function and place the shuffled array to its new position on the board
+function shuffleBoard(cardsContainer) {
+    const gameCards = [...cardsContainer.children];
+    const shuffledGameCards = shuffleCards(gameCards);
+
+    while (cardsContainer.firstChild) {
+        cardsContainer.removeChild(cardsContainer.firstChild);
+    }
+    shuffledGameCards.forEach(function(card) {
+        cardsContainer.appendChild(card);
+    });
+}
