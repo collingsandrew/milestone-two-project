@@ -16,15 +16,15 @@
 <body>
     <!--page heading-->
     <header class="page-heading">
-        <img src="./assets/images/mario-game-page-main.webp" alt="an image of mario" width="200px">
+        <img src="./assets/images/mario-game-page-main.webp" alt="an image of mario" width="200">
         <h1>Mario Memory</h1>
     </header>
     <!--game board-->
     <section class="game-container">
-        <div class="game-stats" aria-label="the game stats showing timer and correct matches">
+        <div class="game-stats">
             <!--each game stat is given a span with an id so it can be accessed and updated through javascript-->
-            <div>Correct Matches: <span id="correct-matches">0</span></div>
-            <div>Timer: <span id="game-timer">120</span></div>
+            <div aria-label="correct matches">Correct Matches: <span id="correct-matches">0</span></div>
+            <div aria-label="timer">Timer: <span id="game-timer">120</span></div>
         </div>
         <!--board cards-->
         <div class="game-board" aria-label="the game board for the memory game">
