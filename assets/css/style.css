@@ -121,6 +121,11 @@ body {
     margin-bottom: 10px;
 }
 
+.buttons-container button:hover {
+    background-color: #e60012;
+    color: white;
+}
+
 .buttons-container p {
     margin-top: 20px;
     margin-bottom: 5px;
