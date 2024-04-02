@@ -69,6 +69,9 @@ body {
     box-shadow: 2px 2px 2px;
 }
 
+/* game cards */
+/* youtube video https://www.youtube.com/watch?v=OV8MVmtgmoY used as guide for the flip effect on the game cards */
+
 .game-card {
     position: relative;
     width: 60px;
@@ -80,18 +83,23 @@ body {
     border-radius: 5px;
     box-shadow: 1px 1px 1px;
     background-color: white;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
 }
 
 .card-face {
     position: absolute;
     height: 100%;
     border-radius: 5px;
+    backface-visibility: hidden;
 }
 
 .card-back {
     position: absolute;
     height: 90%;
     border-radius: 5px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
 }
 
 /* page buttons */
