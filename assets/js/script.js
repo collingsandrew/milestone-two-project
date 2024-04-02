@@ -1,4 +1,4 @@
-const gameBoard = document.querySelector('.cards-board');
+const gameBoard = document.querySelector('.game-board');
 
 // function to shuffle the cards on the game board
 // the fisher-yates sorting algorithm has been used to shuffle the array of cards https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/

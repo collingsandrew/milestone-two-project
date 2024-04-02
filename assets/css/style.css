@@ -54,7 +54,7 @@ body {
     margin-bottom: 5px;
 }
 
-.cards-board {
+.game-board {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -132,7 +132,7 @@ body {
 /* resizing the game board on larger devices */
 
 @media (min-width: 767px) {
-    .cards-board {
+    .game-board {
         width: 500px;
         max-width: 500px;
         height: 500px;
