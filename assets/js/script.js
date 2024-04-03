@@ -1,5 +1,3 @@
-const gameBoard = document.querySelector('.game-board');
-
 // function to shuffle the cards on the game board
 // the fisher-yates sorting algorithm has been used to shuffle the array of cards https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
 // array destructuring used to shuffle the array for each node
@@ -24,7 +22,15 @@ function shuffleBoard(cardsContainer) {
     });
 }
 
+// forEach loop with an event listener that adds the class 'flip-card' to each game card that is clicked, resulting in the card rotating 180 degrees
+document.querySelectorAll('.game-card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.add('flip-card');
+    });
+});
+
 // function to start a new game and reset/shuffle the board
 function newGame(evt) {
+    const gameBoard = document.querySelector('.game-board');
     shuffleBoard(gameBoard);
 }
