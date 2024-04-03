@@ -1,3 +1,7 @@
+// add event listener for when the HTML is fully loaded, ensuring javascript does not run until then
+document.addEventListener('DOMContentLoaded', function() {
+});
+
 // function to shuffle the cards on the game board
 // the fisher-yates sorting algorithm has been used to shuffle the array of cards https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
 // array destructuring used to shuffle the array for each node
@@ -9,7 +13,7 @@ function shuffleCards(cards) {
     return cards;
 }
 
-// function to use the shuffledCards function and place the shuffled array to its new position on the board
+// function that removes the current cards on the board and replaces them with the shuffled cards array, giving them a new position on the board
 function shuffleBoard(cardsContainer) {
     const gameCards = [...cardsContainer.children];
     const shuffledGameCards = shuffleCards(gameCards);
@@ -29,8 +33,11 @@ document.querySelectorAll('.game-card').forEach(card => {
     });
 });
 
-// function to start a new game and reset/shuffle the board
+// function to start a new game and reset/shuffle the board, used for the 'new game' button and on page load
 function newGame(evt) {
     const gameBoard = document.querySelector('.game-board');
     shuffleBoard(gameBoard);
 }
+
+// shuffles the cards on the board when the page has loaded
+window.onload = newGame();
