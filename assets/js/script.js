@@ -1,5 +1,9 @@
 /*jshint esversion: 6 */ 
 
+let flippedCard1, flippedCard2;
+let correctMatches = document.querySelector('#correct-matches');
+let matches = 0;
+
 // add event listener for when the HTML is fully loaded, ensuring javascript does not run until then
 document.addEventListener('DOMContentLoaded', function() {
 });
@@ -31,11 +35,24 @@ function shuffleBoard(cardsContainer) {
 // forEach loop with an event listener that adds the class 'flip-card' to each game card that is clicked, resulting in the card rotating 180 degrees
 document.querySelectorAll('.game-card').forEach(card => {
     card.addEventListener('click', () => {
+        if (card.classList.contains('flip-card')) {
+            return;
+        }
+
         card.classList.add('flip-card');
 
-        setTimeout(() => {
+        if (!flippedCard1) {
+            flippedCard1 = card;
+        } else if (card.innerHTML === flippedCard1.innerHTML) {
+            matches ++;
+            correctMatches.innerHTML = matches;
+        } else {
+            setTimeout(() => {
             card.classList.remove('flip-card');
-        }, 1200);
+            flippedCard1.classList.remove('flip-card');
+            flippedCard1 = null;
+        }, 1000);
+        }
     });
 });
 
