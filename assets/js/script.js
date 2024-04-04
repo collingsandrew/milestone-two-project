@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */ 
+
 // add event listener for when the HTML is fully loaded, ensuring javascript does not run until then
 document.addEventListener('DOMContentLoaded', function() {
 });
@@ -30,13 +32,23 @@ function shuffleBoard(cardsContainer) {
 document.querySelectorAll('.game-card').forEach(card => {
     card.addEventListener('click', () => {
         card.classList.add('flip-card');
+
+        setTimeout(() => {
+            card.classList.remove('flip-card');
+        }, 1200);
     });
 });
 
-// function to start a new game and reset/shuffle the board, used for the 'new game' button and on page load
+// function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
 function newGame(evt) {
     const gameBoard = document.querySelector('.game-board');
+    const gameCards = [...gameBoard.children];
+
     shuffleBoard(gameBoard);
+
+    gameCards.forEach(card => {
+        card.classList.remove('flip-card');
+    });
 }
 
 // shuffles the cards on the board when the page has loaded
