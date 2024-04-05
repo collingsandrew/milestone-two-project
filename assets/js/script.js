@@ -43,15 +43,20 @@ document.querySelectorAll('.game-card').forEach(card => {
 
         if (!flippedCard1) {
             flippedCard1 = card;
-        } else if (card.innerHTML === flippedCard1.innerHTML) {
-            matches ++;
-            correctMatches.innerHTML = matches;
         } else {
-            setTimeout(() => {
-            card.classList.remove('flip-card');
-            flippedCard1.classList.remove('flip-card');
-            flippedCard1 = null;
-        }, 1000);
+            flippedCard2 = card;
+            if (card.innerHTML === flippedCard1.innerHTML) {
+                matches ++;
+                correctMatches.innerHTML = matches;
+                flippedCard1 = null;
+                flippedCard2 = null;
+            }  else {
+                setTimeout(() => {
+                    card.classList.remove('flip-card');
+                    flippedCard1.classList.remove('flip-card');
+                    flippedCard1 = null;
+                }, 1200);
+            }
         }
     });
 });
