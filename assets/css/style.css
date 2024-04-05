@@ -213,4 +213,9 @@ body {
     .game-stats {
         width: 500px;
     }
+
+    #congrats-modal {
+        width: 550px;
+        height: 550px;
+    }
 }
