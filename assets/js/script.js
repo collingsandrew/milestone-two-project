@@ -4,9 +4,8 @@ let flippedCard1, flippedCard2;
 let correctMatches = document.querySelector('#correct-matches');
 let matches = 0;
 
-// event listener for when the HTML is fully loaded, ensuring javascript does not run until then
-document.addEventListener('DOMContentLoaded', function() {
-});
+// event listener for when the HTML is fully loaded, ensuring javascript does not run until then, shuffles the cards on the game board once loaded
+document.addEventListener('DOMContentLoaded', newGame);
 
 // function to shuffle the cards on the game board
 // the fisher-yates sorting algorithm has been used to shuffle the array of cards https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
@@ -53,6 +52,12 @@ document.querySelectorAll('.game-card').forEach(card => {
                 // if the two cards match, increase the correct matches counter by 1 and reset the flipped cards values
                 matches ++;
                 correctMatches.innerHTML = matches;
+                // if the correct matches counter equals 8, display congrats modal
+                if (matches === 8) {
+                    setTimeout(() => {
+                        modalDisplay(document.querySelector('#congrats-modal'));
+                    }, 1000);
+                }
                 flippedCard1 = null;
                 flippedCard2 = null;
             }  else {
@@ -67,17 +72,22 @@ document.querySelectorAll('.game-card').forEach(card => {
     });
 });
 
+// function to display the given modal in the parameter
+function modalDisplay(modal) {
+    modal.style.display = 'block';
+}
+
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
 function newGame(evt) {
     const gameBoard = document.querySelector('.game-board');
     const gameCards = [...gameBoard.children];
 
+    matches = 0;
+    correctMatches.innerHTML = matches;
+    document.querySelector('#congrats-modal').style.display = 'none';
     shuffleBoard(gameBoard);
 
     gameCards.forEach(card => {
         card.classList.remove('flip-card');
     });
 }
-
-// shuffles the cards on the board when the page has loaded
-window.onload = newGame();
