@@ -61,6 +61,7 @@ document.querySelectorAll('.game-card').forEach(card => {
                 }
                 flippedCard1 = null;
                 flippedCard2 = null;
+                unlockCards();
             }  else {
                 // if the two cards do not match, flip the cards back over after a short period of time
                 setTimeout(() => {
