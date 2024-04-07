@@ -47,12 +47,15 @@ document.querySelectorAll('.game-card').forEach(card => {
         } else {
             // if flippedCard1 does have the value of card, give flippedCard2 the value
             flippedCard2 = card;
+            // remove the means of flipping any other cards, allowing two at a time
             lockCards();
             // check if the two flipped cards have the same inner HTML (img tags and src)
             if (card.innerHTML === flippedCard1.innerHTML) {
                 // if the two cards match, increase the correct matches counter by 1 and reset the flipped cards values
                 matches ++;
                 correctMatches.innerHTML = matches;
+                // reenable click events on all cards
+                unlockCards();
                 // if the correct matches counter equals 8, display congrats modal
                 if (matches === 8) {
                     setTimeout(() => {
@@ -61,12 +64,12 @@ document.querySelectorAll('.game-card').forEach(card => {
                 }
                 flippedCard1 = null;
                 flippedCard2 = null;
-                unlockCards();
             }  else {
                 // if the two cards do not match, flip the cards back over after a short period of time
                 setTimeout(() => {
                     card.classList.remove('flip-card');
                     flippedCard1.classList.remove('flip-card');
+                    // reeanble click event on all cards
                     unlockCards();
                     flippedCard1 = null;
                 }, 1200);
@@ -80,6 +83,7 @@ function modalDisplay(modal) {
     modal.style.display = 'block';
 }
 
+// function to stop the user clicking and flipping more cards when two have already been flipped
 function lockCards() {
     if ((flippedCard1 !== null) && (flippedCard2 !== null)) {
         document.querySelectorAll('.game-card').forEach(card => {
@@ -90,6 +94,7 @@ function lockCards() {
     }
 }
 
+// function to allow the user to click and flip cards again
 function unlockCards() {
     document.querySelectorAll('.game-card').forEach(card => {
         if (!card.classList.contains('flip-card')) {
