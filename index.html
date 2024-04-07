@@ -65,11 +65,11 @@
             </div>
             <div class="game-card">
                 <img class="card-face" src="./assets/images/game-card-images/mystery-block-card-front.webp" alt="mystery box image that is the front face of the card">
-                <img class="card-back" src="./assets/images/game-card-images/spiny-game-card.webp" alt="an image of blue spiny">
+                <img class="card-back" src="./assets/images/game-card-images/mario-game-card.webp" alt="an image of mario">
             </div>
             <div class="game-card">
                 <img class="card-face" src="./assets/images/game-card-images/mystery-block-card-front.webp" alt="mystery box image that is the front face of the card">
-                <img class="card-back" src="./assets/images/game-card-images/spiny-game-card.webp" alt="an image of blue spiny">
+                <img class="card-back" src="./assets/images/game-card-images/mario-game-card.webp" alt="an image of mario">
             </div>
             <div class="game-card">
                 <img class="card-face" src="./assets/images/game-card-images/mystery-block-card-front.webp" alt="mystery box image that is the front face of the card">
@@ -107,11 +107,21 @@
     </section>
     <!--modals-->
     <!--all modals of the page-->
+    <!--modal that shows when the user matches all of the cards-->
     <div id="congrats-modal">
-        <div class="congrats-box">
+        <div class="modal-box">
             <img src="./assets/images/modal-images/winning-game-modal-image.webp" alt="mario and luigi high five" width="180">
             <h2>Well Done!</h2>
             <p>You matched all the cards before the time ran out</p>
+            <button onclick="newGame(event)">Play Again</button>
+        </div>
+    </div>
+    <!--modal that shows when the time runs out-->
+    <div id="game-over-modal">
+        <div class="modal-box">
+            <img src="./assets/images/modal-images/game-lose-modal-image.webp" alt="bowser with his arms crossed" width="180">
+            <h2>Game Over!</h2>
+            <p>Too bad, the time ran out before you could match all the cards</p>
             <button onclick="newGame(event)">Play Again</button>
         </div>
     </div>
