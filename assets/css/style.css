@@ -104,6 +104,7 @@ body {
     transform: rotateY(180deg);
 }
 
+/*this allows the card rotation effect */
 .flip-card {
     transform: rotateY(180deg);
 }
@@ -147,6 +148,7 @@ body {
 }
 
 /* modals */
+/* display is set as 'none', so that they are always hidden until required to show */
 
 #congrats-modal {
     display: none;
