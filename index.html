@@ -20,13 +20,16 @@
         <h1>Mario Memory</h1>
     </header>
     <!--game board-->
+    <!--the main elemnt of the page, this is the game board that will house the memory cards-->
     <section class="game-container">
+        <!--the game stats, which is the correct matches counter and the game timer-->
         <div class="game-stats">
             <!--each game stat is given a span with an id so it can be accessed and updated through javascript-->
             <div aria-label="correct matches">Correct Matches: <span id="correct-matches">0</span></div>
             <div aria-label="timer">Timer: <span id="game-timer">120</span></div>
         </div>
         <!--board cards-->
+        <!--each memory card on the game board, these will be interacted with by the user-->
         <div class="game-board" aria-label="the game board for the memory game">
             <div class="game-card">
                 <img class="card-face" src="./assets/images/game-card-images/mystery-block-card-front.webp" alt="mystery box image that is the front face of the card">
@@ -95,6 +98,7 @@
         </div>
     </section>
     <!--page buttons-->
+    <!--the buttons of the page, new game, instructions of the game and a contact us button-->
     <section class="buttons-container">
         <button onclick="newGame(event)">New Game</button>
         <button>Instructions</button>
@@ -102,6 +106,7 @@
         <button>Contact Us</button>
     </section>
     <!--modals-->
+    <!--all modals of the page-->
     <div id="congrats-modal">
         <div class="congrats-box">
             <img src="./assets/images/modal-images/winning-game-modal-image.webp" alt="mario and luigi high five" width="180">
@@ -110,6 +115,7 @@
             <button onclick="newGame(event)">Play Again</button>
         </div>
     </div>
+    <!--link to the javascript file-->
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
