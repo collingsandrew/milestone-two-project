@@ -47,6 +47,7 @@ document.querySelectorAll('.game-card').forEach(card => {
         } else {
             // if flippedCard1 does have the value of card, give flippedCard2 the value
             flippedCard2 = card;
+            lockCards();
             // check if the two flipped cards have the same inner HTML (img tags and src)
             if (card.innerHTML === flippedCard1.innerHTML) {
                 // if the two cards match, increase the correct matches counter by 1 and reset the flipped cards values
@@ -80,9 +81,10 @@ function modalDisplay(modal) {
 function lockCards() {
     if ((flippedCard1 = card) && (flippedCard2 = card)) {
         document.querySelectorAll('.game-card').forEach(card => {
-            card.removeEventListener('click', function {
-            })
-        })
+            if (!card.classList.contains('flip-card')) {
+                card.removeEventListener('click', () => {});
+            }
+        });
     }
 }
 
