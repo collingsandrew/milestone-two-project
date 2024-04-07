@@ -77,6 +77,15 @@ function modalDisplay(modal) {
     modal.style.display = 'block';
 }
 
+function lockCards() {
+    if ((flippedCard1 = card) && (flippedCard2 = card)) {
+        document.querySelectorAll('.game-card').forEach(card => {
+            card.removeEventListener('click', function {
+            })
+        })
+    }
+}
+
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
 function newGame(evt) {
     const gameBoard = document.querySelector('.game-board');
