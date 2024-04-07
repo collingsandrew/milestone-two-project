@@ -79,10 +79,10 @@ function modalDisplay(modal) {
 }
 
 function lockCards() {
-    if ((flippedCard1 = card) && (flippedCard2 = card)) {
+    if ((flippedCard1 !== null) && (flippedCard2 !== null)) {
         document.querySelectorAll('.game-card').forEach(card => {
             if (!card.classList.contains('flip-card')) {
-                card.removeEventListener('click', () => {});
+                card.style.pointerEvents = 'none';
             }
         });
     }
