@@ -1,8 +1,13 @@
 /*jshint esversion: 6 */ 
 
+// variables for the first and second flipped card
 let flippedCard1, flippedCard2;
+// variable accessing the correct matches counter on the board
 let correctMatches = document.querySelector('#correct-matches');
+// variable to count the current matches the user has
 let matches = 0;
+// variable to access the cards on the game board
+const gameMemoryCards = document.querySelectorAll('.game-card');
 
 // event listener for when the HTML is fully loaded, ensuring javascript does not run until then, shuffles the cards on the game board once loaded
 document.addEventListener('DOMContentLoaded', newGame);
@@ -32,7 +37,7 @@ function shuffleBoard(cardsContainer) {
 }
 
 // forEach loop with an event listener that flips the card and checks whether the two cards match
-document.querySelectorAll('.game-card').forEach(card => {
+gameMemoryCards.forEach(card => {
     card.addEventListener('click', () => {
         // if the card is already flipped, exit the function
         if (card.classList.contains('flip-card')) {
@@ -86,7 +91,7 @@ function modalDisplay(modal) {
 // function to stop the user clicking and flipping more cards when two have already been flipped
 function lockCards() {
     if ((flippedCard1 !== null) && (flippedCard2 !== null)) {
-        document.querySelectorAll('.game-card').forEach(card => {
+        gameMemoryCards.forEach(card => {
             if (!card.classList.contains('flip-card')) {
                 card.style.pointerEvents = 'none';
             }
@@ -96,7 +101,7 @@ function lockCards() {
 
 // function to allow the user to click and flip cards again
 function unlockCards() {
-    document.querySelectorAll('.game-card').forEach(card => {
+    gameMemoryCards.forEach(card => {
         if (!card.classList.contains('flip-card')) {
             card.style.pointerEvents = 'auto';
         }
