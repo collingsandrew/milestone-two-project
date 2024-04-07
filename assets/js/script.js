@@ -66,6 +66,7 @@ document.querySelectorAll('.game-card').forEach(card => {
                 setTimeout(() => {
                     card.classList.remove('flip-card');
                     flippedCard1.classList.remove('flip-card');
+                    unlockCards();
                     flippedCard1 = null;
                 }, 1200);
             }
@@ -86,6 +87,14 @@ function lockCards() {
             }
         });
     }
+}
+
+function unlockCards() {
+    document.querySelectorAll('.game-card').forEach(card => {
+        if (!card.classList.contains('flip-card')) {
+            card.style.pointerEvents = 'auto';
+        }
+    });
 }
 
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
