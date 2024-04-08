@@ -147,10 +147,15 @@ let gameTimerInterval = setInterval(updateTimer, 1000);
 function newGame(evt) {
     const gameBoard = document.querySelector('.game-board');
     const gameCards = [...gameBoard.children];
+    const modals = document.querySelectorAll('.game-modals');
 
     matches = 0;
     correctMatches.innerHTML = matches;
-    document.querySelector('#congrats-modal').style.display = 'none';
+
+    modals.forEach(modal => {
+        modal.style.display = 'none';
+    });
+
     shuffleBoard(gameBoard);
 
     gameCards.forEach(card => {
