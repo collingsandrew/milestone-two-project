@@ -129,11 +129,19 @@ function updateTimer() {
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
 
+    // update the html of the game board timer with the minutes and seconds variable values
     gameTimer.innerHTML = `${minutes}:${seconds}`;
+    // reduce the timeLimit variable by 1
     timeLimit--;
+
+    if (timeLimit === 0) {
+        clearInterval(gameTimerInterval);
+        modalDisplay(document.querySelector('#game-over-modal'));
+    }
 }
 
-setInterval(updateTimer, 1000);
+// reduces the timer by 1 second per interval
+let gameTimerInterval = setInterval(updateTimer, 1000);
 
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
 function newGame(evt) {
