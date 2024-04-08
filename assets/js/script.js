@@ -134,6 +134,7 @@ function updateTimer() {
     // reduce the timeLimit variable by 1
     timeLimit--;
 
+    // display game over modal when the game timer reaches zero
     if (timeLimit === 0) {
         clearInterval(gameTimerInterval);
         modalDisplay(document.querySelector('#game-over-modal'));
@@ -149,15 +150,21 @@ function newGame(evt) {
     const gameCards = [...gameBoard.children];
     const modals = document.querySelectorAll('.game-modals');
 
+    // reset the game timer and the correct matches counter on game board
+    timeLimit = 60;
+    updateTimer();
     matches = 0;
     correctMatches.innerHTML = matches;
 
+    // hide any modals that are currently displayed
     modals.forEach(modal => {
         modal.style.display = 'none';
     });
 
+    // shuffle the cards on the game board
     shuffleBoard(gameBoard);
 
+    // flip all cards back over
     gameCards.forEach(card => {
         card.classList.remove('flip-card');
     });
