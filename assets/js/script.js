@@ -54,34 +54,41 @@ gameMemoryCards.forEach(card => {
             flippedCard2 = card;
             // remove the means of flipping any other cards, allowing two at a time
             lockCards();
-            // check if the two flipped cards have the same inner HTML (img tags and src)
-            if (card.innerHTML === flippedCard1.innerHTML) {
-                // if the two cards match, increase the correct matches counter by 1 and reset the flipped cards values
-                matches ++;
-                correctMatches.innerHTML = matches;
-                // reenable click events on all cards
-                unlockCards();
-                // if the correct matches counter equals 8, display congrats modal
-                if (matches === 8) {
-                    setTimeout(() => {
-                        modalDisplay(document.querySelector('#congrats-modal'));
-                    }, 1000);
-                }
-                flippedCard1 = null;
-                flippedCard2 = null;
-            }  else {
-                // if the two cards do not match, flip the cards back over after a short period of time
-                setTimeout(() => {
-                    card.classList.remove('flip-card');
-                    flippedCard1.classList.remove('flip-card');
-                    // reeanble click event on all cards
-                    unlockCards();
-                    flippedCard1 = null;
-                }, 1200);
-            }
+            // check if the two flipped cards match
+            checkCardMatch(card);
         }
     });
 });
+
+// function to check if the two flipped cards match or not
+// checks if the correct matches is equal to 8, and presents the congratulations modal if it does
+function checkCardMatch(card) {
+    // check if the two flipped cards have the same inner HTML (img tags and src)
+    if (card.innerHTML === flippedCard1.innerHTML) {
+        // if the two cards match, increase the correct matches counter by 1 and reset the flipped cards values
+        matches ++;
+        correctMatches.innerHTML = matches;
+        // reenable click events on all cards
+        unlockCards();
+        // if the correct matches counter equals 8, display congrats modal
+        if (matches === 8) {
+            setTimeout(() => {
+                modalDisplay(document.querySelector('#congrats-modal'));
+            }, 1000);
+        }
+        flippedCard1 = null;
+        flippedCard2 = null;
+    }  else {
+        // if the two cards do not match, flip the cards back over after a short period of time
+        setTimeout(() => {
+            card.classList.remove('flip-card');
+            flippedCard1.classList.remove('flip-card');
+            // reeanble click event on all cards
+            unlockCards();
+            flippedCard1 = null;
+        }, 1200);
+    }
+}
 
 // function to display the given modal in the parameter
 function modalDisplay(modal) {
