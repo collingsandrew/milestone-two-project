@@ -1,13 +1,17 @@
 /*jshint esversion: 6 */ 
 
+// variable to access the cards on the game board
+const gameMemoryCards = document.querySelectorAll('.game-card');
 // variables for the first and second flipped card
 let flippedCard1, flippedCard2;
 // variable accessing the correct matches counter on the board
-let correctMatches = document.querySelector('#correct-matches');
+const correctMatches = document.querySelector('#correct-matches');
 // variable to count the current matches the user has
 let matches = 0;
-// variable to access the cards on the game board
-const gameMemoryCards = document.querySelectorAll('.game-card');
+// variable accessing the countdown timer on the game board
+const gameTimer = document.querySelector('#game-timer');
+// variable setting the initial time limit for the counter in seconds
+let timer = 60;
 
 // event listener for when the HTML is fully loaded, ensuring javascript does not run until then, shuffles the cards on the game board once loaded
 document.addEventListener('DOMContentLoaded', newGame);
@@ -70,6 +74,7 @@ function checkCardMatch(card) {
         correctMatches.innerHTML = matches;
         // reenable click events on all cards
         unlockCards();
+
         // if the correct matches counter equals 8, display congrats modal
         if (matches === 8) {
             setTimeout(() => {
