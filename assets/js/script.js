@@ -150,9 +150,13 @@ function newGame(evt) {
     const gameCards = [...gameBoard.children];
     const modals = document.querySelectorAll('.game-modals');
 
-    // reset the game timer and the correct matches counter on game board
+    // reset the game timer
+    clearInterval(gameTimerInterval);
     timeLimit = 60;
     updateTimer();
+    gameTimerInterval = setInterval(updateTimer, 1000);
+
+    //  reset the correct matches counter
     matches = 0;
     correctMatches.innerHTML = matches;
 
