@@ -11,7 +11,7 @@ let matches = 0;
 // variable accessing the countdown timer on the game board
 const gameTimer = document.querySelector('#game-timer');
 // variable setting the initial time limit for the counter in seconds
-let timer = 60;
+let timeLimit = 60;
 
 // event listener for when the HTML is fully loaded, ensuring javascript does not run until then, shuffles the cards on the game board once loaded
 document.addEventListener('DOMContentLoaded', newGame);
@@ -119,6 +119,21 @@ function unlockCards() {
         }
     });
 }
+
+// function to make the game timer countdown from 1 minute
+// https://www.youtube.com/watch?v=x7WJEmxNlEs&list=PLF5aobzHSchkhjYGigJ6ldBQJ39VSi69o&index=5&t=53s used as a guide
+function updateTimer() {
+    let minutes = Math.floor(timeLimit / 60);
+    let seconds = timeLimit % 60;
+
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+
+    gameTimer.innerHTML = `${minutes}:${seconds}`;
+    timeLimit--;
+}
+
+setInterval(updateTimer, 1000);
 
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
 function newGame(evt) {
