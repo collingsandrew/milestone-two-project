@@ -220,4 +220,8 @@ body {
         width: 550px;
         height: 550px;
     }
+
+    .modal-box {
+        padding: 12%;
+    }
 }

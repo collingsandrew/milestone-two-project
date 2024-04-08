@@ -61,7 +61,7 @@ gameMemoryCards.forEach(card => {
 });
 
 // function to check if the two flipped cards match or not
-// checks if the correct matches is equal to 8, and presents the congratulations modal if it does
+// checks if the 'correct matches' counter is equal to 8, and presents the congratulations modal if it is
 function checkCardMatch(card) {
     // check if the two flipped cards have the same inner HTML (img tags and src)
     if (card.innerHTML === flippedCard1.innerHTML) {
