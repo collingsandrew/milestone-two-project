@@ -12,6 +12,10 @@ let matches = 0;
 const gameTimer = document.querySelector('#game-timer');
 // variable setting the initial time limit for the counter in seconds
 let timeLimit = 60;
+// variable that stores a boolean value of whether the user has started the game or not
+let gameStarted = false;
+// variable for the game timer interval that reduces the time by a second at a time
+let gameTimerInterval;
 
 // event listener for when the HTML is fully loaded, ensuring javascript does not run until then, shuffles the cards on the game board once loaded
 document.addEventListener('DOMContentLoaded', newGame);
@@ -43,6 +47,8 @@ function shuffleBoard(cardsContainer) {
 // forEach loop with an event listener that flips the card and checks whether the two cards match
 gameMemoryCards.forEach(card => {
     card.addEventListener('click', () => {
+        // when the user flips a card, start the game timer
+        startTimer();
         // if the card is already flipped, exit the function
         if (card.classList.contains('flip-card')) {
             return;
@@ -141,8 +147,13 @@ function updateTimer() {
     }
 }
 
-// reduces the timer by 1 second per interval
-let gameTimerInterval = setInterval(updateTimer, 1000);
+// function that starts the timer when the user flips the first card
+function startTimer() {
+    if (!gameStarted) {
+        gameStarted = true;
+        gameTimerInterval = setInterval(updateTimer, 1000);
+    }
+}
 
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
 function newGame(evt) {
@@ -154,7 +165,6 @@ function newGame(evt) {
     clearInterval(gameTimerInterval);
     timeLimit = 60;
     updateTimer();
-    gameTimerInterval = setInterval(updateTimer, 1000);
 
     //  reset the correct matches counter
     matches = 0;
