@@ -87,6 +87,7 @@ function checkCardMatch(card) {
         // if the correct matches counter equals 8, display congrats modal
         if (matches === 8) {
             setTimeout(() => {
+                clearInterval(gameTimerInterval);
                 displayModal(document.querySelector('#congrats-modal'));
             }, 1000);
         }
