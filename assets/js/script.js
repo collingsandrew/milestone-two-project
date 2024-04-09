@@ -87,7 +87,7 @@ function checkCardMatch(card) {
         // if the correct matches counter equals 8, display congrats modal
         if (matches === 8) {
             setTimeout(() => {
-                modalDisplay(document.querySelector('#congrats-modal'));
+                displayModal(document.querySelector('#congrats-modal'));
             }, 1000);
         }
 
@@ -104,11 +104,6 @@ function checkCardMatch(card) {
             flippedCard1 = null;
         }, 1200);
     }
-}
-
-// function to display the given modal in the parameter
-function modalDisplay(modal) {
-    modal.style.display = 'block';
 }
 
 // function to stop the user clicking and flipping more cards when two have already been flipped
@@ -148,7 +143,7 @@ function updateTimer() {
     // display game over modal when the game timer reaches zero
     if (timeLimit === 0) {
         clearInterval(gameTimerInterval);
-        modalDisplay(document.querySelector('#game-over-modal'));
+        displayModal(document.querySelector('#game-over-modal'));
     }
 }
 
@@ -160,16 +155,34 @@ function startTimer() {
     }
 }
 
-// function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
-function newGame(evt) {
-    const gameBoard = document.querySelector('.game-board');
-    const gameCards = [...gameBoard.children];
-    const modals = document.querySelectorAll('.game-modals');
-
-    // reset the game timer
+// function to reset the game timer
+function resetTimer() {
     clearInterval(gameTimerInterval);
     timeLimit = 60;
     updateTimer();
+}
+
+// function to display the given modal in the parameter
+function displayModal(modal) {
+    modal.style.display = 'block';
+}
+
+// hide any modals that are currently displayed
+function hideModal() {
+    const modals = document.querySelectorAll('.game-modals');
+    modals.forEach(modal => {
+        modal.style.display = 'none';
+    });
+}
+
+// function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
+function newGame() {
+    const gameBoard = document.querySelector('.game-board');
+    const gameCards = [...gameBoard.children];
+
+    hideModal();
+    shuffleBoard(gameBoard);
+    resetTimer();
 
     // reset boolean value, allows the timer to start counting down when a game is started again
     gameStarted = false;
@@ -177,14 +190,6 @@ function newGame(evt) {
     //  reset the correct matches counter
     matches = 0;
     correctMatches.innerHTML = matches;
-
-    // hide any modals that are currently displayed
-    modals.forEach(modal => {
-        modal.style.display = 'none';
-    });
-
-    // shuffle the cards on the game board
-    shuffleBoard(gameBoard);
 
     // flip all cards back over
     gameCards.forEach(card => {
