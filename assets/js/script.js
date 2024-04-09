@@ -39,6 +39,7 @@ function shuffleBoard(cardsContainer) {
     while (cardsContainer.firstChild) {
         cardsContainer.removeChild(cardsContainer.firstChild);
     }
+
     shuffledGameCards.forEach(function(card) {
         cardsContainer.appendChild(card);
     });
@@ -49,10 +50,12 @@ gameMemoryCards.forEach(card => {
     card.addEventListener('click', () => {
         // when the user flips a card, start the game timer
         startTimer();
+
         // if the card is already flipped, exit the function
         if (card.classList.contains('flip-card')) {
             return;
         }
+
         // add the flip-card class that rotates the card 180 degrees
         card.classList.add('flip-card');
 
@@ -87,6 +90,8 @@ function checkCardMatch(card) {
                 modalDisplay(document.querySelector('#congrats-modal'));
             }, 1000);
         }
+
+        // reset the values of the flipped cards
         flippedCard1 = null;
         flippedCard2 = null;
     }  else {
@@ -165,6 +170,9 @@ function newGame(evt) {
     clearInterval(gameTimerInterval);
     timeLimit = 60;
     updateTimer();
+
+    // reset boolean value, allows the timer to start counting down when a game is started again
+    gameStarted = false;
 
     //  reset the correct matches counter
     matches = 0;
