@@ -163,6 +163,8 @@ body {
     border-radius: 5px;
     width: 70%;
     height: auto;
+    max-height: 100%;
+    overflow-y: scroll;
   }
 
   .modal-box {
