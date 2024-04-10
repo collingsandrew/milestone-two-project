@@ -176,10 +176,12 @@ function hideModal() {
     });
 }
 
+// show the how to play modal when the how to play button is clicked
 document.querySelector('#how-to-button').addEventListener('click', () => {
     displayModal(document.querySelector('#how-to-modal'));
 });
 
+// close the how to play modal when the close button is clicked
 document.querySelector('#close-modal').addEventListener('click', () => {
     hideModal(document.querySelector('#how-to-modal'));
 });

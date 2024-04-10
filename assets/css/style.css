@@ -169,6 +169,7 @@ body {
     scrollbar-width: none;
   }
 
+  /* hides the scrollbar within the modals */
   .game-modals::-webkit-scrollbar {
     display: none;
   }
@@ -180,11 +181,11 @@ body {
     align-items: center;
     padding: 5%;
     color: white;
-    text-shadow: 1px 1px 1px black;
   }
 
   .modal-box h2 {
     text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
   }
 
   .modal-box button {
