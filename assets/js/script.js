@@ -35,11 +35,13 @@ function shuffleCards(cards) {
 function shuffleBoard(cardsContainer) {
     const gameCards = [...cardsContainer.children];
     const shuffledGameCards = shuffleCards(gameCards);
-
+    
+    // while the container has a child element, loops through the array removing each node
     while (cardsContainer.firstChild) {
         cardsContainer.removeChild(cardsContainer.firstChild);
     }
 
+    // adds the cards back into the container in a random order
     shuffledGameCards.forEach(function(card) {
         cardsContainer.appendChild(card);
     });
