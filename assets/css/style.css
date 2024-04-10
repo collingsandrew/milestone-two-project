@@ -165,6 +165,12 @@ body {
     height: auto;
     max-height: 100%;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .game-modals::-webkit-scrollbar {
+    display: none;
   }
 
   .modal-box {
