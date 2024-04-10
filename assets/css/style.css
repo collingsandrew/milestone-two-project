@@ -170,7 +170,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    padding: 20%;
+    padding: 5%;
     color: white;
     text-shadow: 1px 1px 1px black;
   }
@@ -223,7 +223,7 @@ body {
 
     .game-modals {
         width: 550px;
-        height: 550px;
+        height: auto;
     }
 
     .modal-box {
