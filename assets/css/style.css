@@ -197,6 +197,10 @@ body {
     background-color: #0065b3;
   }
 
+  .modal-box ul {
+    text-align: left;
+  }
+
 /* media queries */
 
 /* resizing the game board on larger devices */
