@@ -101,13 +101,13 @@
     <!--the buttons of the page, new game, instructions of the game and a contact us button-->
     <section class="buttons-container">
         <button onclick="newGame(event)">New Game</button>
-        <button>Instructions</button>
+        <button>How to play</button>
         <p>Tell us what you think!</p>
         <button>Contact Us</button>
     </section>
     <!--modals-->
     <!--all modals of the page-->
-    <!--modal that shows when the user matches all of the cards-->
+    <!--winning modal that shows when the user matches all of the cards-->
     <div id="congrats-modal" class="game-modals">
         <div class="modal-box">
             <img src="./assets/images/modal-images/winning-game-modal-image.webp" alt="mario and luigi high five" width="180">
@@ -116,13 +116,30 @@
             <button onclick="newGame(event)">Play Again</button>
         </div>
     </div>
-    <!--modal that shows when the time runs out-->
+    <!--game over modal that shows when the time runs out-->
     <div id="game-over-modal" class="game-modals">
         <div class="modal-box">
             <img src="./assets/images/modal-images/game-lose-modal-image.webp" alt="bowser with his arms crossed" width="180">
             <h2>Game Over!</h2>
             <p>Too bad, the time ran out before you could match all the cards</p>
             <button onclick="newGame(event)">Play Again</button>
+        </div>
+    </div>
+    <!--how to play modal that shows when the how to play button is clicked-->
+    <div id="how-to-modal" class="game-modals">
+        <div class="modal-box">
+            <img src="./assets/images/modal-images/how-to-modal-image.webp" alt="mario riding yoshi" width="180">
+            <h2>How to play</h2>
+            <p>
+                The goal of Mario Memory is to match pairs of cards with the same Mario characters until all cards are successfully matched
+            </p>
+            <ul>
+                <li>Players must only flip over two cards at a time</li>
+                <li>Remember the location of cards that have been flipped over to help find matching pairs</li>
+                <li>Players must use their memory and concentration skills to recall the location of cards and match them accordingly</li>
+                <li>The game ends when all pairs of cards have been matched or when the time runs out, you have one minute</li>
+            </ul>
+            <button>Close</button>
         </div>
     </div>
     <!--link to the javascript file-->
