@@ -177,7 +177,11 @@ function hideModal() {
 }
 
 document.querySelector('#how-to-button').addEventListener('click', () => {
-    document.querySelector('#how-to-modal').style.display = 'block';
+    displayModal(document.querySelector('#how-to-modal'));
+});
+
+document.querySelector('#close-modal').addEventListener('click', () => {
+    hideModal(document.querySelector('#how-to-modal'));
 });
 
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
