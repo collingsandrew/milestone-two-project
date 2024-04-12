@@ -187,7 +187,7 @@ document.querySelector('#how-to-button').addEventListener('click', () => {
 });
 
 // close the how to play modal when the close button is clicked
-document.querySelector('#close-modal').addEventListener('click', () => {
+document.querySelector('#how-to-modal .close-modal').addEventListener('click', () => {
     hideModal(document.querySelector('#how-to-modal'));
 });
 
@@ -197,7 +197,7 @@ document.querySelector('#contact-button').addEventListener('click', () => {
 });
 
 // close the how to play modal when the close button is clicked
-document.querySelector('.close-modal').addEventListener('click', () => {
+document.querySelector('#contact-modal .close-modal').addEventListener('click', () => {
     hideModal(document.querySelector('#how-to-modal'));
 });
 
