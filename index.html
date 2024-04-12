@@ -126,7 +126,7 @@
         </div>
     </div>
     <!--how to play modal that shows when the how to play button is clicked-->
-    <div id="how-to-modal" class="game-modals">
+    <div id="how-to-modal" class="game-modals" aria-label="how to play">
         <div class="modal-box">
             <img src="./assets/images/modal-images/how-to-modal-image.webp" alt="mario riding yoshi" width="180">
             <h2>How to play</h2>
@@ -139,12 +139,13 @@
                 <li>Players must use their memory and concentration skills to recall the location of cards and match them accordingly</li>
                 <li>The game ends when all pairs of cards have been matched or when the time runs out, you have one minute</li>
             </ul>
-            <button class="close-modal">Close</button>
+            <button class="close-modal" aria-label="close the instructions pop up">Close</button>
         </div>
     </div>
     <!--contact us modal that shows when the contact us button is clicked-->
-    <div id="contact-modal" class="game-modals">
+    <div id="contact-modal" class="game-modals" aria-label="contact us form">
         <div class="modal-box">
+            <img src="./assets/images/modal-images/contact-modal-image.webp" alt="mario and luigi" width="180">
             <h2>Contact Us</h2>
             <p>Tell us what you think of Mario Memory and what other games you would like to see from us in the future!</p>
             <form method="POST">
@@ -160,7 +161,7 @@
                 <br>
                 <button type="submit" aria-label="submit form">Submit</button>
             </form>
-            <button class="close-modal">Close</button>
+            <button class="close-modal" aria-label="close the pop up form">Close</button>
         </div>
     </div>
     <!--link to the javascript file-->
