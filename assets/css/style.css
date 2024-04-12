@@ -169,6 +169,15 @@ body {
     scrollbar-width: none;
   }
 
+  .game-modals input, textarea {
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  #contact-modal button {
+    margin: 5px;
+  }
+
   /* hides the scrollbar within the modals */
   .game-modals::-webkit-scrollbar {
     display: none;
