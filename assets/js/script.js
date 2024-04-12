@@ -83,9 +83,12 @@ function checkCardMatch(card) {
         // if the two cards match, increase the correct matches counter by 1 and reset the flipped cards values
         matches ++;
         correctMatches.innerHTML = matches;
-        // reenable click events on all cards
-        unlockCards();
 
+        // reenable click events on all cards after 1 second
+        setTimeout(() => {
+            unlockCards();
+        }, 1000);
+        
         // if the correct matches counter equals 8, display congrats modal
         if (matches === 8) {
             setTimeout(() => {
