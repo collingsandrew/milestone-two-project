@@ -157,7 +157,15 @@ function updateTimer() {
 function startTimer() {
     if (!gameStarted) {
         gameStarted = true;
-        gameTimerInterval = setInterval(updateTimer, 1000);
+
+        // execute the function and if there is an error, alert the user and start a newGame
+        // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch used as a guide for error catching
+        try {
+            gameTimerInterval = setInterval(updateTimer, 1000);
+        } catch (error) {
+            console.error('Something went wrong: ', error.message);
+            newGame();
+        }
     }
 }
 
@@ -211,7 +219,7 @@ function newGame() {
     try {
         shuffleBoard(gameBoard);
     } catch (error) {
-        alert('Something went wrong, refreshing the game board', error.message);
+        console.error('Something went wrong: ', error.message);
         newGame();
     }
 
