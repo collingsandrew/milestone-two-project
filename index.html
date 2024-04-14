@@ -159,7 +159,7 @@
             <img src="./assets/images/modal-images/contact-modal-image.webp" alt="mario and luigi" width="180">
             <h2>Contact Us</h2>
             <p>Tell us what you think of Mario Memory and what other games you would like to see from us in the future!</p>
-            <form onsubmit="return sendMail(this);">
+            <form id="contact-form">
                 <label for="name">Name*</label>
                 <br>
                 <input type="text" id="name" placeholder="Full name" required>
@@ -170,7 +170,7 @@
                 <br>
                 <textarea id="message" rows="10" required></textarea>
                 <br>
-                <button type="submit" onclick="sendMail()" aria-label="submit form">Submit</button>
+                <button type="submit" aria-label="submit form">Submit</button>
             </form>
             <button class="close-modal" aria-label="close the pop up form">Close</button>
         </div>
