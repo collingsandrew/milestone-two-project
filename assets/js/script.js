@@ -206,8 +206,16 @@ function newGame() {
     const gameBoard = document.querySelector('.game-board');
     const gameCards = [...gameBoard.children];
 
+    // execute the function and if there is an error, alert the user and start a newGame
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch used as a guide for error catching
+    try {
+        shuffleBoard(gameBoard);
+    } catch (error) {
+        alert('Something went wrong, refreshing the game board', error.message);
+        newGame();
+    }
+
     hideModal();
-    shuffleBoard(gameBoard);
     resetTimer();
 
     // reset boolean value, allows the timer to start counting down when a game is started again
