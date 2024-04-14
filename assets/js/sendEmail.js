@@ -9,6 +9,9 @@ window.onload = function() {
         emailjs.sendForm('service_9bd1whl', 'template_858quls', this)
             .then(() => {
                 alert('Thank you, your message was sent successfully.');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('message').value = '';
             }, (error) => {
                 alert('Oops, looks like something went wrong, please try again', error);
             });
