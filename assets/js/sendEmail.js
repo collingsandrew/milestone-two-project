@@ -1,14 +1,19 @@
-// function that allows the user to submit the form and send an email, using the emailjs api
-function sendEmail() {
+/*jshint esversion: 6 */ 
+
+function sendMail() {
     let params = {
-        from_name: document.getElementById('name').value,
-        from_email: document.getElementById('email').value,
-        content_text: document.getElementById('form-content').value
-    }
-    emailjs.send('outlook', 'template_0qcfqfb', params).then(function(response) {
-        alert('SUCCESS! ', response.status, response.text);
-    },
-    function (error) {
-        alert('FAILED!', error);
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value
+    };
+
+    const serviceID = 'service_9bd1whl';
+    const templateID = 'template_858quls';
+
+    emailjs.send(serviceID, templateID, params)
+    .then(() => {
+        alert('SUCCESS!');
+    }, (error) => {
+        alert('FAILED...', error);
     });
 }
