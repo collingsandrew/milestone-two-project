@@ -10,10 +10,10 @@ function sendMail() {
     const serviceID = 'service_9bd1whl';
     const templateID = 'template_858quls';
 
-    emailjs.send(serviceID, templateID, params)
+    emailjs.sendForm(serviceID, templateID, params)
     .then(() => {
         alert('SUCCESS!');
     }, (error) => {
-        alert('FAILED...', error);
+        alert('FAILED...');
     });
 }
