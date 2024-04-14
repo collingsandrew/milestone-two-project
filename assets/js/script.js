@@ -223,8 +223,14 @@ function newGame() {
         newGame();
     }
 
+    try {
+        resetTimer();
+    } catch (error) {
+        console.error('Something went wrong: ', error.message);
+        newGame();
+    }
+
     hideModal();
-    resetTimer();
 
     // reset boolean value, allows the timer to start counting down when a game is started again
     gameStarted = false;
