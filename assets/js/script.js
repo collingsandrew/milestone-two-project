@@ -163,7 +163,7 @@ function startTimer() {
         try {
             gameTimerInterval = setInterval(updateTimer, 1000);
         } catch (error) {
-            console.error('Something went wrong: ', error.message);
+            console.error('Something went wrong when updating the timer. startTimer function error: ', error.message);
             newGame();
         }
     }
@@ -219,14 +219,14 @@ function newGame() {
     try {
         shuffleBoard(gameBoard);
     } catch (error) {
-        console.error('Something went wrong: ', error.message);
+        console.error('Something went wrong when shuffling the cards. shuffleBoard function error: ', error.message);
         newGame();
     }
 
     try {
         resetTimer();
     } catch (error) {
-        console.error('Something went wrong: ', error.message);
+        console.error('Something went wrong when resetting the timer. resetTimer function error: ', error.message);
         newGame();
     }
 
