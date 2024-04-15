@@ -49,3 +49,38 @@ The purpose of this project is to provide the user with a website on which they 
 14. I want a timer to challenge myself to complete the game in the given time.
 15. I want the option to restart the game.
 16. I want visually appealing card designs and animations, so that the game is enjoyable to play.
+
+## Accessibility
+
+The site has been built with accessibility in mind to ensure that it is always a positive experience.
+
+This has been achieved by:
+- Semantic HTML.
+- Choosing fonts and colours with high contrast.
+- Adequate aria-labels for interactive features.
+- Adequate alt attributes for images.
+
+## Design
+
+### Design Choices
+
+The site has been designed to be consistent with the Mario theme; all images, colours and design choices have been made to make the user feel immersed in the world of Mario.
+
+### Wireframes
+
+<details>
+<summary>Game Page</summary>
+<img src="./assets/readme/wireframes/main-page-wireframe.png">
+</details>
+<details>
+<summary>Modals</summary>
+<img src="./assets/readme/wireframes/modal-wireframe.png">
+</details>
+<details>
+<summary>Contact Modal</summary>
+<img src="./assets/readme/wireframes/contact-modal-wireframe.png">
+</details>
+<details>
+<summary>404 Page</summary>
+<img src="./assets/readme/wireframes/404-page-wireframe.png">
+</details>
