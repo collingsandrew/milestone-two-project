@@ -46,9 +46,10 @@ The purpose of this project is to provide the user with a website on which they 
 11. I want to flip two cards at a time to match pairs so that I can progress through the game.
 12. I want the cards to flip back if they don't match, so that I can try again.
 13. I want the cards to stay flipped if they match.
-14. I want a timer to challenge myself to complete the game in the given time.
-15. I want the option to restart the game.
-16. I want visually appealing card designs and animations, so that the game is enjoyable to play.
+14. I want the cards to be in a different position each game.
+15. I want a timer to challenge myself to complete the game in the given time.
+16. I want the option to restart the game.
+17. I want visually appealing card designs and animations, so that the game is enjoyable to play.
 
 ## Accessibility
 
@@ -110,4 +111,45 @@ The color scheme across the site has been chosen to maintain a consistent theme.
 <details>
 <summary>Blue</summary>
 <img src="./assets/readme/colours/blue.png">
+</details>
+
+## Features
+
+### Page Heading
+
+- The moment the user enters the site, they are greeted by an inviting image of Mario alongside the heading 'Mario Memory'.
+
+User stories: 5
+<details>
+<summary>Preview</summary>
+<img src="./assets/readme/features/page-heading-feature.png">
+</details>
+
+### Game Stats
+
+- Displays a visible indicator showing the number of correct matches the user has made, allowing them to track their progress
+- Displays the remaining time until the end of the game, ensuring players can keep track of their progress.
+
+User stories: 8, 15
+<details>
+<summary>Preview</summary>
+<img src="./assets/readme/features/game-stats-feature.png">
+</details>
+
+### Game Board
+
+- The game board consists of 16 cards, all with appealing designs adhering to the consistent theme.
+- The cards are shuffled at the start of each game.
+- The user can only flip two cards at a time.
+- Unmatched cards are flipped back over.
+- When two cards are matched, the cards remain flipped.
+
+User stories: 5, 6, 10, 11, 12, 13, 16
+<details>
+<summary>Preview Unflipped</summary>
+<img src="./assets/readme/features/game-board-unflipped.png">
+</details>
+<details>
+<summary>Preview Flipped</summary>
+<img src="./assets/readme/features/game-board-flipped.png">
 </details>
