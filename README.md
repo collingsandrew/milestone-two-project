@@ -1,39 +1,51 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Mario Memory
 
-Welcome,
+![Site Image](./assets/readme/site-image.png)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+This is the website for Mario Memory; it is designed to be visually appealing, user-friendly, interactive, and accessible on all devices. It consists of a memory game that is themed around Mario.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
-
-## Codeanywhere Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
-
-`python3 -m http.server`
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
-
-`http_server`
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A button should appear to click: _Open Preview_ or _Open Browser_.
-
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+[View live webpage](https://collingsandrew.github.io/milestone-two-project/index.html)
 
 ---
 
-Happy coding!
+## User Experience (UX)
+
+### Site Contents
+
+- A Mario themed memory game.
+- Instructions on how to play the game.
+- A form that allows the user to contact the site owner.
+
+### Target Audience
+
+- Children.
+- Young teenagers.
+- Anyone with an interest in Mario.
+
+### Project Purpose
+
+The purpose of this project is to provide the user with a website on which they can take part in a fun memory game. It must have good design principles and provide significant interactive functionality.
+
+### User Stories
+
+#### Client Goals
+
+1. I want the site to be simple to navigate and use.
+2. I want to give the user the means of contacting the site owner.
+3. I want the game to be intuitive and easy to understand, so that users of all ages can enjoy it.
+4. I want the site to be accessible on multiple platforms (such as web, mobile, and tablets), so that users can play it on their preferred devices.
+5. I want the site to have a visually appealing interface with good design principles and high-quality graphics, so that it attracts and engages users from the moment they visit.
+
+#### User Goals
+
+6. I want to take part in a fun game.
+7. I want to read the instructions for the game.
+8. I want to see how many cards I have matched so far.
+9. I want to easily play again once the game is finished.
+10. I want to see the game board with all the cards faced down initially so that I can begin the game.
+11. I want to flip two cards at a time to match pairs so that I can progress through the game.
+12. I want the cards to flip back if they don't match, so that I can try again.
+13. I want the cards to stay flipped if they match.
+14. I want a timer to challenge myself to complete the game in the given time.
+15. I want the option to restart the game.
+16. I want visually appealing card designs and animations, so that the game is enjoyable to play.
