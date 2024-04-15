@@ -187,6 +187,11 @@ body {
     margin: 5px;
   }
 
+  #message {
+    box-sizing: border-box;
+    width: 80%;
+  }
+
   /* hides the scrollbar within the modals */
   .game-modals::-webkit-scrollbar {
     display: none;
