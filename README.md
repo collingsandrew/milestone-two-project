@@ -84,3 +84,30 @@ The site has been designed to be consistent with the Mario theme; all images, co
 <summary>404 Page</summary>
 <img src="./assets/readme/wireframes/404-page-wireframe.png">
 </details>
+
+### Typography
+
+The following Google Fonts were used on this site:
+
+- Catamaran is used for the headings on the site.
+
+![Catamaran](assets/readme/fonts/catamaran-font.png)
+
+- Roboto is used for the main text of the site.
+
+![Roboto](assets/readme/fonts/roboto-font.png)
+
+Both of these fonts have been sourced from the [Official Mario Website](https://mario.nintendo.com/) to maintain a consistent theme.
+
+### Colour Scheme
+
+The color scheme across the site has been chosen to maintain a consistent theme. The red colour choice, inspired by the [Official Mario Website](https://mario.nintendo.com/), ensures coherence with the franchise. Likewise, the blue color has been matched to Mario's iconic apron, enhancing the overall thematic consistency.
+
+<details>
+<summary>Red</summary>
+<img src="./assets/readme/colours/red.png">
+</details>
+<details>
+<summary>Blue</summary>
+<img src="./assets/readme/colours/blue.png">
+</details>
