@@ -249,6 +249,7 @@ To clone the repository:
 Testing was conducted continuously throughout the entire project development process. Google Developer Tools and [JSHint](https://jshint.com/) were utilized to identify errors and troubleshoot any issues that arose during development.
 
 Automated testing helps catch problems quickly and saves time by letting the computer do repetitive tasks instead of the developer. For example, if a change is made to a project, automated testing can be used to check to make sure that everything is working as it should be and all code is free from errors.
+
 Automated testing;
 - Saves time.
 - Is reliable.
@@ -262,13 +263,45 @@ Automated testing;
 
 [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML. No errors were found.
 
-[Page results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcollingsandrew.github.io%2Fmilestone-two-project%2Findex.html)
+[Page Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcollingsandrew.github.io%2Fmilestone-two-project%2Findex.html)
 
 #### CSS Validation
 
 [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS. No errors were found.
 
 [Page Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcollingsandrew.github.io%2Fmilestone-two-project%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+#### JavaScript Validation
+
+[JSHint](https://jshint.com/) was used to validate the Javascript files. No issues were found. One undefined variable found in sendEmail.js, this is code used for the emailjs API which is initialized within the index.html head tag.
+
+<details>
+<summary>script.js</summary>
+<img src="./assets/readme/testing/js-hint-script.png">
+</details>
+<details>
+<summary>sendEmail.js</summary>
+<img src="./assets/readme/testing/js-hint-email.png">
+</details>
+
+### Accessibility Testing
+
+[WAVE Web Accessibility Tool](https://wave.webaim.org/) was used to test for accessibility errors. The page passed with no errors and no contrast errors.
+
+[Page Results](https://wave.webaim.org/report#/https://collingsandrew.github.io/milestone-two-project/index.html)
+
+### Lighthouse Testing
+
+Google Lighthouse was used to test the page. The page performed well.
+
+<details>
+<summary>Mobile</summary>
+<img src="./assets/readme/testing/mobile-lighthouse.png">
+</details>
+<details>
+<summary>Desktop</summary>
+<img src="./assets/readme/testing/desktop-lighthouse.png">
+</details>
 
 ### Devices
 
