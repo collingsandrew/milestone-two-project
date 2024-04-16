@@ -123,7 +123,7 @@ User Stories: 3, 4, 5, 17
 
 ### Page Heading
 
-- The moment the user enters the site, they are greeted by an inviting image of Mario alongside the heading 'Mario Memory'.
+- The moment the user enters the site, they are greeted by an image of Mario alongside the heading 'Mario Memory'.
 
 User stories: 5
 <details>
