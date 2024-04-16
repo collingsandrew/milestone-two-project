@@ -118,8 +118,9 @@ The color scheme across the site has been chosen to maintain a consistent theme.
 - The site boasts a responsive design, ensuring accessibility across all device sizes.
 - All images are of high quality and are chosen to align with the theme of the site.
 - The design is simple, providing an immediate understanding of the site's purpose and the essence of the game.
+- The site consists of a single page, making it easy to navigate and simple to use.
 
-User Stories: 3, 4, 5, 17
+User Stories: 1, 3, 4, 5, 17
 
 ### Page Heading
 
@@ -320,3 +321,36 @@ The following browsers were used to test the site:
 - Google Chrome
 - Mozilla Firefox
 - Safari
+
+## Technologies Used
+
+- [Balsamiq](https://balsamiq.com/wireframes/)
+- [Tiny PNG](https://tinypng.com/)
+- [Adobe Photoshop](https://www.adobe.com/uk/)
+- [Google Fonts](https://fonts.google.com/about)
+- [Git](https://git-scm.com/)
+- [Github](https://github.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Favicon](https://favicon.io/)
+- [Jira Software](https://www.atlassian.com/software/jira)
+- [Am I Responsive](https://ui.dev/amiresponsive)
+- [YouTube](https://www.youtube.com/)
+
+### Languages
+
+- HTML
+- CSS
+- JavaScript
+
+## Credits
+
+### Acknowledgements
+
+- My mentor for guidance throughout the project.
+- Code Institute for their course material.
+- [Bro Code YouTube Channel.](https://www.youtube.com/@BroCodez)
+
+### Resources
+
+- [W3schools](https://www.w3schools.com/css/css3_flexbox.asp) for help with flexbox.
+- [JavaScript & JQuery by Jon Duckett](https://javascriptbook.com/) for reference throughout the project.
