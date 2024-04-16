@@ -16,4 +16,4 @@ window.onload = function() {
                 alert('Oops, looks like something went wrong, please try again', error);
             });
     });
-}
+};
