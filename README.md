@@ -243,3 +243,47 @@ To clone the repository:
 2. Above your files to the right, select the code drop down button and select either HTTPS, SSH or GitHub CLI and then copy the URL below.
 3. Then, in your chosen code editor, change the current working directory to the location you would like the cloned repository to be located.
 4. In the terminal, type 'git clone' and paste the URL that you copied earlier, and then press enter.
+
+## Testing
+
+Testing was conducted continuously throughout the entire project development process. Google Developer Tools and [JSHint](https://jshint.com/) were utilized to identify errors and troubleshoot any issues that arose during development.
+
+Automated testing helps catch problems quickly and saves time by letting the computer do repetitive tasks instead of the developer. For example, if a change is made to a project, automated testing can be used to check to make sure that everything is working as it should be and all code is free from errors.
+Automated testing;
+- Saves time.
+- Is reliable.
+- Always gives an accurate result.
+- Works for both small and large projects.
+- Can isolate any errors to help identify where a problem is occurring.
+
+### Code Validation
+
+#### HTML Validation
+
+[W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML. No errors were found.
+
+[Page results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcollingsandrew.github.io%2Fmilestone-two-project%2Findex.html)
+
+#### CSS Validation
+
+[W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) was used to validate the CSS. No errors were found.
+
+[Page Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcollingsandrew.github.io%2Fmilestone-two-project%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+### Devices
+
+Google Developer Tools was used to test the site on various device sizes.
+
+The following devices were used to test the site:
+- 32" (3840 x 2160) Desktop Monitor
+- 15.6" (1920 x 1080) ASUS Laptop
+- iPad Tablet
+- Samsung S23 Mobile
+- iPhone 12 Mobile
+
+### Browsers
+
+The following browsers were used to test the site:
+- Google Chrome
+- Mozilla Firefox
+- Safari
