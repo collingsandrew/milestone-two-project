@@ -34,7 +34,7 @@ The purpose of this project is to provide the user with a website on which they 
 2. I want to give the user the means of contacting the site owner.
 3. I want the game to be intuitive and easy to understand, so that users of all ages can enjoy it.
 4. I want the site to be accessible on multiple platforms (such as web, mobile, and tablets), so that users can play it on their preferred devices.
-5. I want the site to have a visually appealing interface with good design principles and high-quality graphics, so that it attracts and engages users from the moment they visit.
+5. I want the site to have a visually appealing interface with good design principles and high-quality images, so that it attracts and engages users from the moment they visit.
 
 #### User Goals
 
@@ -102,7 +102,7 @@ Both of these fonts have been sourced from the [Official Mario Website](https://
 
 ### Colour Scheme
 
-The color scheme across the site has been chosen to maintain a consistent theme. The red colour choice, inspired by the [Official Mario Website](https://mario.nintendo.com/), ensures coherence with the franchise. Likewise, the blue color has been matched to Mario's iconic apron, enhancing the overall thematic consistency.
+The color scheme across the site has been chosen to maintain a consistent theme. The red colour choice, inspired by the [Official Mario Website](https://mario.nintendo.com/), ensures coherence with the franchise. Likewise, the blue color has been matched to Mario's iconic apron, maintaining the consistent theme.
 
 <details>
 <summary>Red</summary>
@@ -114,6 +114,12 @@ The color scheme across the site has been chosen to maintain a consistent theme.
 </details>
 
 ## Features
+
+- The site boasts a responsive design, ensuring accessibility across all device sizes.
+- All images are of high quality and are chosen to align with the theme of the site.
+- The design is simple, providing an immediate understanding of the site's purpose and the essence of the game.
+
+User Stories: 3, 4, 5, 17
 
 ### Page Heading
 
@@ -127,7 +133,7 @@ User stories: 5
 
 ### Game Stats
 
-- Displays a visible indicator showing the number of correct matches the user has made, allowing them to track their progress
+- Displays a visible indicator showing the number of correct matches the user has made, allowing them to track their progress.
 - Displays the remaining time until the end of the game, ensuring players can keep track of their progress.
 
 User stories: 8, 15
@@ -143,8 +149,9 @@ User stories: 8, 15
 - The user can only flip two cards at a time.
 - Unmatched cards are flipped back over.
 - When two cards are matched, the cards remain flipped.
+- High quality Mario themed images have been used for the card designs.
 
-User stories: 5, 6, 10, 11, 12, 13, 16
+User stories: 5, 6, 10, 11, 12, 13, 16, 17
 <details>
 <summary>Preview Unflipped</summary>
 <img src="./assets/readme/features/game-board-unflipped.png">
@@ -152,4 +159,53 @@ User stories: 5, 6, 10, 11, 12, 13, 16
 <details>
 <summary>Preview Flipped</summary>
 <img src="./assets/readme/features/game-board-flipped.png">
+</details>
+
+### New Game
+
+- Allows the user to start a new game.
+- Shuffles the cards each time the 'New Game' button is clicked.
+
+User Stories: 9, 14, 16
+
+### How To Play Modal
+
+- Displays a modal upon clicking the 'How To Play' button.
+- Provides the user with the goal of the game and instructions on how to play.
+- Close button that hides the modal.
+
+User Stories: 3, 7
+<details>
+<summary>Preview</summary>
+<img src="./assets/readme/features/how-to-modal.png">
+</details>
+
+### Contact Us Modal
+
+- Displays a modal upon clicking the 'Contact Us' button.
+- Offers the user a form to complete, enabling communication with the site owner.
+- Utilizes the emailjs API for transmitting completed forms to the site owner.
+- Close button that hides the modal.
+
+User Stories: 2
+<details>
+<summary>Preview</summary>
+<img src="./assets/readme/features/contact-modal.png">
+</details>
+
+### Modals
+
+- All modals follow the same consistent design and use high quality images.
+- Alerts the user whether they have completed the game or that it is game over.
+- Offers the user the option to play again.
+- All cards shuffle when the user chooses to play again.
+
+User Stories: 5, 9, 14, 16
+<details>
+<summary>Winning Modal</summary>
+<img src="./assets/readme/features/winning-modal.png">
+</details>
+<details>
+<summary>Game Over Modal</summary>
+<img src="./assets/readme/features/game-over-modal.png">
 </details>
