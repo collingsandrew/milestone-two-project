@@ -67,6 +67,8 @@ This has been achieved by:
 
 The site has been designed to be consistent with the Mario theme; all images, colours and design choices have been made to make the user feel immersed in the world of Mario.
 
+All images in this project were sourced from [ClipartMax](https://www.clipartmax.com/).
+
 ### Wireframes
 
 <details>
@@ -102,7 +104,7 @@ Both of these fonts have been sourced from the [Official Mario Website](https://
 
 ### Colour Scheme
 
-The color scheme across the site has been chosen to maintain a consistent theme. The red colour choice, inspired by the [Official Mario Website](https://mario.nintendo.com/), ensures coherence with the franchise. Likewise, the blue color has been matched to Mario's iconic apron, maintaining the consistent theme.
+The color scheme across the site has been chosen to maintain a consistent theme. The red colour choice, inspired by the [Official Mario Website](https://mario.nintendo.com/), ensures coherence with the franchise. Likewise, the blue color has been matched to Mario's iconic apron, maintaining the consistent theme. These colours provide good contrast when placed together.
 
 <details>
 <summary>Red</summary>
@@ -334,6 +336,8 @@ This implementation successfully prevents unintended interactions with backgroun
 
 ## Technologies Used
 
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools)
+- [JSHint](https://jshint.com/)
 - [Balsamiq](https://balsamiq.com/wireframes/)
 - [Tiny PNG](https://tinypng.com/)
 - [Adobe Photoshop](https://www.adobe.com/uk/)
@@ -358,9 +362,20 @@ This implementation successfully prevents unintended interactions with backgroun
 
 - My mentor for guidance throughout the project.
 - Code Institute for their course material.
+- My cohort for help and support throughout the project.
 - [Bro Code YouTube Channel.](https://www.youtube.com/@BroCodez)
+
+### Code
+
+- The Fisher Yates Sorting Algorithm was used to shuffle the array of cards for the game board. Taken from [Stack Overflow](https://stackoverflow.com/questions/59810241/how-to-fisher-yates-shuffle-a-javascript-array) and [GeeksforGeeks.](https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/)
+- The [YouTube video by Florin Pop](https://www.youtube.com/watch?v=x7WJEmxNlEs&list=PLF5aobzHSchkhjYGigJ6ldBQJ39VSi69o&index=6&t=53s) was used as a guide to implement the game timer.
+- The [YouTube video by Arjun Khara](https://www.youtube.com/watch?v=OV8MVmtgmoY) was used as a guide to implement the flip effect on the cards.
+- The JavaScript code used to implement the emailjs API was taken from their [official site.](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
 
 ### Resources
 
+- [ClipartMax](https://www.clipartmax.com/) was used to source all images in this project.
 - [W3schools](https://www.w3schools.com/css/css3_flexbox.asp) for help with flexbox.
 - [JavaScript & JQuery by Jon Duckett](https://javascriptbook.com/) for reference throughout the project.
+- [YouTube](https://www.youtube.com/) for reference throughout the project.
+- [Mimo](https://mimo.org/) for help with learning the concepts of JavaScript.
