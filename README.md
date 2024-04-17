@@ -253,12 +253,40 @@ Testing was conducted continuously throughout the entire project development pro
 
 Automated testing helps catch problems quickly and saves time by letting the computer do repetitive tasks instead of the developer. For example, if a change is made to a project, automated testing can be used to check to make sure that everything is working as it should be and all code is free from errors.
 
-Automated testing;
+When automated testing would be deployed;
+- When you need to test things over and over again.
+- To make sure changes don't break existing stuff.
+- When you have a lot of things to test.
+- To check how different parts of the software work together.
+- To see how well the software handles lots of users.
+- To test how fast the software is.
+- To check if the software talks to other programs correctly.
+- To automatically test new code before it's released.
+
+Automated testing benefits;
 - Saves time.
 - Is reliable.
 - Always gives an accurate result.
 - Works for both small and large projects.
 - Can isolate any errors to help identify where a problem is occurring.
+
+Manual testing involves understanding what the software should do, planning how to test it, thoroughly trying out all its features, making sure others can repeat your tests, documenting what you find, being careful and attentive to details, testing for unexpected issues, and continuously learning and improving your testing practices.
+
+When manual testing would be deployed;
+- When the developer needs to check things by hand.
+- To try and find unexpected problems.
+- To see if a user would find the software easy to use.
+- When you need to quickly check something instead of doing automated tests.
+- Before deployment to double check everything is working as it should.
+
+Manual testing benefits;
+- The developer knows what the code should do.
+- The developer can test everything carefully.
+- The tests can be done by multiple testers.
+- The findings of tests can be written down and passed on.
+- Allows for discussions to correct errors.
+- Allows for user simulation.
+- Allows the developer to learn from mistakes made.
 
 ### Code Validation
 
@@ -338,6 +366,7 @@ This implementation successfully prevents unintended interactions with backgroun
 
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools)
 - [JSHint](https://jshint.com/)
+- [EmailJS API](https://www.emailjs.com/)
 - [Balsamiq](https://balsamiq.com/wireframes/)
 - [Tiny PNG](https://tinypng.com/)
 - [Adobe Photoshop](https://www.adobe.com/uk/)
@@ -368,14 +397,14 @@ This implementation successfully prevents unintended interactions with backgroun
 ### Code
 
 - The Fisher Yates Sorting Algorithm was used to shuffle the array of cards for the game board. Taken from [Stack Overflow](https://stackoverflow.com/questions/59810241/how-to-fisher-yates-shuffle-a-javascript-array) and [GeeksforGeeks.](https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/)
-- The [YouTube video by Florin Pop](https://www.youtube.com/watch?v=x7WJEmxNlEs&list=PLF5aobzHSchkhjYGigJ6ldBQJ39VSi69o&index=6&t=53s) was used as a guide to implement the game timer.
-- The [YouTube video by Arjun Khara](https://www.youtube.com/watch?v=OV8MVmtgmoY) was used as a guide to implement the flip effect on the cards.
+- This [YouTube video by Florin Pop](https://www.youtube.com/watch?v=x7WJEmxNlEs&list=PLF5aobzHSchkhjYGigJ6ldBQJ39VSi69o&index=6&t=53s) was used as a guide to implement the game timer.
+- This [YouTube video by Arjun Khara](https://www.youtube.com/watch?v=OV8MVmtgmoY) was used as a guide to implement the flip effect on the cards.
 - The JavaScript code used to implement the emailjs API was taken from their [official site.](https://www.emailjs.com/docs/tutorial/creating-contact-form/)
 
 ### Resources
 
 - [ClipartMax](https://www.clipartmax.com/) was used to source all images in this project.
-- [W3schools](https://www.w3schools.com/css/css3_flexbox.asp) for help with flexbox.
+- [W3schools](https://www.w3schools.com/css/css3_flexbox.asp) for reference throughout the project.
 - [JavaScript & JQuery by Jon Duckett](https://javascriptbook.com/) for reference throughout the project.
 - [YouTube](https://www.youtube.com/) for reference throughout the project.
 - [Mimo](https://mimo.org/) for help with learning the concepts of JavaScript.
