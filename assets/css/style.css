@@ -233,6 +233,7 @@ body {
     text-align: left;
   }
 
+  /* overlay div that prevents the user from clicking on elements when a modal is shown */
   .overlay {
     position: fixed;
     display: none;

@@ -23,7 +23,7 @@ let overlay = document.querySelector('.overlay');
 document.addEventListener('DOMContentLoaded', newGame);
 
 // function to shuffle the cards on the game board
-// the fisher-yates sorting algorithm has been used to shuffle the array of cards https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
+// the fisher-yates sorting algorithm has been used to shuffle the array of cards https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/ and https://stackoverflow.com/questions/59810241/how-to-fisher-yates-shuffle-a-javascript-array used as reference
 // array destructuring used to shuffle each index with the shuffled index
 function shuffleCards(cards) {
     for (let i = cards.length - 1; i > 0; i--) {
