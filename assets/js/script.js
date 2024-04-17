@@ -16,6 +16,8 @@ let timeLimit = 60;
 let gameStarted = false;
 // variable for the game timer interval that reduces the time by a second at a time
 let gameTimerInterval;
+// variable accessing the overlay div that prevents users from clicking on other elements when a modal is open
+let overlay = document.querySelector('.overlay');
 
 // event listener for when the HTML is fully loaded, ensuring javascript does not run until then, shuffles the cards on the game board once loaded
 document.addEventListener('DOMContentLoaded', newGame);
@@ -179,6 +181,9 @@ function resetTimer() {
 // function to display the given modal in the parameter
 function displayModal(modal) {
     modal.style.display = 'block';
+
+    // shows the overlay div that prevents the user from clicking on elements outside of the modal
+    overlay.style.display = 'block';
 }
 
 // hide any modals that are currently displayed
@@ -187,6 +192,9 @@ function hideModal() {
     modals.forEach(modal => {
         modal.style.display = 'none';
     });
+
+    // hides the overlay div that prevents the user from clicking on elements outside of the modal
+    overlay.style.display = 'none';
 }
 
 // show the how to play modal when the how to play button is clicked
