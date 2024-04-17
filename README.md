@@ -254,14 +254,13 @@ Testing was conducted continuously throughout the entire project development pro
 Automated testing helps catch problems quickly and saves time by letting the computer do repetitive tasks instead of the developer. For example, if a change is made to a project, automated testing can be used to check to make sure that everything is working as it should be and all code is free from errors.
 
 When automated testing would be deployed;
-- When you need to test things over and over again.
-- To make sure changes don't break existing stuff.
-- When you have a lot of things to test.
+- When the developer needs to test things over and over again.
+- To make sure changes do not break existing stuff.
+- When there is a lot of code to test.
 - To check how different parts of the software work together.
 - To see how well the software handles lots of users.
-- To test how fast the software is.
-- To check if the software talks to other programs correctly.
-- To automatically test new code before it's released.
+- To test the performance of the software.
+- To automatically test new code before it is deployed.
 
 Automated testing benefits;
 - Saves time.
@@ -276,7 +275,7 @@ When manual testing would be deployed;
 - When the developer needs to check things by hand.
 - To try and find unexpected problems.
 - To see if a user would find the software easy to use.
-- When you need to quickly check something instead of doing automated tests.
+- When the developer needs to quickly check something instead of doing automated tests.
 - Before deployment to double check everything is working as it should.
 
 Manual testing benefits;
