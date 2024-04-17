@@ -322,6 +322,16 @@ The following browsers were used to test the site:
 - Mozilla Firefox
 - Safari
 
+## Bugs
+
+### Fixed
+
+A bug was found that allowed users to interact with elements behind an open modal. To fix this an empty div was added in the index.html file, positioned to cover the entire page with a high z-index to ensure it overlays other content. This div was set to 'display: none' by default.
+
+All modals were given a z-index value higher than the overlay div, ensuring they always appear on top. Using JavaScript I added code to the displayModal and hideModal functions so that when a modal is opened, the overlay div is set to 'display: block', effectively blocking user interactions with elements underneath. When the modal is closed, the overlay div is hidden ('display: none'), allowing the user to then interact with the page elements again.
+
+This implementation successfully prevents unintended interactions with background elements while a modal is active, enhancing the user experience.
+
 ## Technologies Used
 
 - [Balsamiq](https://balsamiq.com/wireframes/)
