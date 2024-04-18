@@ -412,6 +412,15 @@ Google Lighthouse was used to test the page. The page performed well.
 | ----------------------------- |--------------------|----------|
 | Site URL entered into browser | Site loads         | Pass     |
 
+#### Responsiveness
+
+| Action                        | Expected Result    | Pass/Fail|
+| ----------------------------- |--------------------|----------|
+| Test on mobile device         | Responsive         | Pass     |
+| Test on tablet device         | Responsive         | Pass     |
+| Test on laptop device         | Responsive         | Pass     |
+| Test on desktop               | Responsive         | Pass     |
+
 #### Game Stats
 
 | Action                                        | Expected Result                         | Pass/Fail|
