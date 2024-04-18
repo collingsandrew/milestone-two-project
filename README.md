@@ -31,7 +31,7 @@ The purpose of this project is to provide the user with a website on which they 
 #### Client Goals
 
 1. I want the site to be simple to navigate and use.
-2. I want to give the user the means of contacting the site owner.
+2. I want to give the user a means of contacting the site owner.
 3. I want the game to be intuitive and easy to understand, so that users of all ages can enjoy it.
 4. I want the site to be accessible on multiple platforms (such as web, mobile, and tablets), so that users can play it on their preferred devices.
 5. I want the site to have a visually appealing interface with good design principles and high-quality images, so that it attracts and engages users from the moment they visit.
@@ -42,7 +42,7 @@ The purpose of this project is to provide the user with a website on which they 
 7. I want to read the instructions for the game.
 8. I want to see how many cards I have matched so far.
 9. I want to easily play again once the game is finished.
-10. I want to see the game board with all the cards faced down initially so that I can begin the game.
+10. I want to see the game board with all the cards facing down initially so that I can begin the game.
 11. I want to flip two cards at a time to match pairs so that I can progress through the game.
 12. I want the cards to flip back if they don't match, so that I can try again.
 13. I want the cards to stay flipped if they match.
@@ -332,6 +332,75 @@ Google Lighthouse was used to test the page. The page performed well.
 <summary>Desktop</summary>
 <img src="./assets/readme/testing/desktop-lighthouse.png">
 </details>
+
+### Testing User Stories
+
+1. I want the site to be simple to navigate and use.
+    * The site consists of one page with everything it provides.
+    * The site has a simple structure, making it easy to navigate.
+    * The site contains only necessary content.
+    * The structure remains the same on all device sizes.
+    * The controls on the site clearly indicate what they are for.
+    * The site follows good accessibility principles.
+
+2. I want to give the user a means of contacting the site owner.
+    * The site offers users a contact form through which they can send messages to the site owner.
+
+3. I want the game to be intuitive and easy to understand, so that users of all ages can enjoy it.
+    * The game consists of clear, high-quality images in a simple design to keep the user's attention.
+    * The game avoids being too complex to suit the target audience.
+    * Upon first impressions, the user will immediately recognise the aim of the game.
+    * Simple controls; just click/touch and play.
+    * Simple, straight-forward instructions are provided.
+
+4. I want the site to be accessible on multiple platforms (such as web, mobile, and tablets), so that users can play it on their preferred devices.
+    * The site has been designed with a mobile first approach.
+    * The site is responsive on all device sizes.
+
+5. I want the site to have a visually appealing interface with good design principles and high-quality images, so that it attracts and engages users from the moment they visit.
+    * The site follows a consistent design.
+    * The colours used are in good contrast and follow the theme of the site.
+    * All images used are of high quality.
+    * The interface is simple yet pleasing, keeping the user engaged.
+
+6. I want to take part in a fun game.
+    * The site provides the user with a fun Mario themed memory game they can take part in.
+
+7. I want to read the instructions for the game.
+    * The site provides the user with instructions for how to play the game.
+
+8. I want to see how many cards I have matched so far.
+    * The game features a counter that tallies the user's current number of matches.
+
+9. I want to easily play again once the game is finished.
+    * The game shows a modal at the end of the game, which gives the user the option to play again, whether the user completes the game or if it is game over.
+
+10. I want to see the game board with all the cards facing down initially so that I can begin the game.
+    * Upon visiting the site/starting a new game, all cards show the same image, the image being a mystery block from the world of Mario.
+
+11. I want to flip two cards at a time to match pairs so that I can progress through the game.
+    * The game allows the user to flip two cards at a time.
+
+12. I want the cards to flip back if they don't match, so that I can try again.
+    * If two flipped cards are not a match, they flip back over.
+
+13. I want the cards to stay flipped if they match.
+    * If two cards are a match, they will remain flipped over, and the user can continue on with the game.
+
+14. I want the cards to be in a different position each game.
+    * Upon visiting the site/starting a new game, the cards on the game board are shuffled into a different position each time.
+
+15. I want a timer to challenge myself to complete the game in the given time.
+    * The site provides the user with a timer that counts down when the user flips the first card.
+    * The timer counts down from one minute.
+
+16. I want the option to restart the game.
+    * The user is given the option to start a new game.
+
+17. I want visually appealing card designs and animations, so that the game is enjoyable to play.
+    * The images used for the cards are of high quality.
+    * The images used for the cards follow the theme of the site.
+    * When the user flips a card, it is done with a visually appealing rotation.
 
 ### Devices
 
