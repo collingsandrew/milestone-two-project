@@ -205,16 +205,18 @@ document.querySelector('#how-to-button').addEventListener('click', () => {
 // close the how to play modal when the close button is clicked
 document.querySelector('#how-to-modal .close-modal').addEventListener('click', () => {
     hideModal(document.querySelector('#how-to-modal'));
+    newGame();
 });
 
-// show the how to play modal when the how to play button is clicked
+// show the contact modal when the contact us button is clicked
 document.querySelector('#contact-button').addEventListener('click', () => {
     displayModal(document.querySelector('#contact-modal'));
 });
 
-// close the how to play modal when the close button is clicked
+// close the contact modal when the close button is clicked
 document.querySelector('#contact-modal .close-modal').addEventListener('click', () => {
-    hideModal(document.querySelector('#how-to-modal'));
+    hideModal(document.querySelector('#contact-modal'));
+    newGame();
 });
 
 // function to start a new game, resetting the cards, timer, correct matches, and shuffling the board. used for the 'new game' button and on page load
