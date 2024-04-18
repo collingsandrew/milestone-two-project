@@ -402,6 +402,25 @@ Google Lighthouse was used to test the page. The page performed well.
     * The images used for the cards follow the theme of the site.
     * When the user flips a card, it is done with a visually appealing rotation.
 
+### Functionality Testing
+
+#### Site Page Load
+
+| Action                        | Expected Result    | Pass/Fail|
+| ----------------------------- |--------------------|----------|
+| Site URL entered into browser | Site loads         | Pass     |
+
+#### Game Stats
+
+| Action                                        | Expected Result                   | Pass/Fail|
+| --------------------------------------------- |-----------------------------------|----------|
+| Start the game by flipping the first card     | Game timer begins to count down   | Pass     |
+| Click new game button                         | Game timer resets                 | Pass     |
+| Click play again button (winning modal)       | Game timer resets                 | Pass     |
+| Click play again button (game over modal)     | Game timer resets                 | Pass     |
+| Win a game                                    | Game timer stops                  | Pass     |
+| Lose a game                                   | Game timer stops                  | Pass     |
+
 ### Devices
 
 Google Developer Tools was used to test the site on various device sizes.
