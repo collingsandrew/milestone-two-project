@@ -95,6 +95,7 @@ body {
     height: 100%;
     border-radius: 5px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 
 .card-back {
@@ -102,12 +103,21 @@ body {
     height: 90%;
     border-radius: 5px;
     backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 /*this allows the card rotation effect */
 .flip-card {
     transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
 }
 
 /* page buttons */
