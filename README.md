@@ -257,7 +257,7 @@ Automated testing helps catch problems quickly and saves time by letting the com
 
 When automated testing would be deployed;
 - When the developer needs to test things over and over again.
-- To make sure changes do not break existing stuff.
+- To make sure changes do not break existing features.
 - When there is a lot of code to test.
 - To check how different parts of the software work together.
 - To see how well the software handles lots of users.
