@@ -463,7 +463,7 @@ Google Lighthouse was used to test the page. The page performed well.
 
 | Action                                     | Expected Result                         | Pass/Fail|
 | ------------------------------------------ |-----------------------------------------|----------|
-| Win a game                                 | Congrats modal shows                    | Pass     |
+| Match all cards                            | Congrats modal shows                    | Pass     |
 | Click 'Play again' button (congrats modal) | Hides the modal                         | Pass     |
 | Click 'Play again' button (congrats modal) | Begins a new game                       | Pass     |
 | Allow timer to run out                     | Game over modal shows                   | Pass     |
