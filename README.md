@@ -425,6 +425,55 @@ Google Lighthouse was used to test the page. The page performed well.
 | Click play again button (winning modal)       | Correct matches resets to 0             | Pass     |
 | Click play again button (game over modal)     | Correct matches resets to 0             | Pass     |
 
+#### Game Board
+
+| Action                                        | Expected Result                         | Pass/Fail|
+| --------------------------------------------- |-----------------------------------------|----------|
+| Reload page                                   | All cards show unflipped (mystery block)| Pass     |
+| Reload page                                   | Card positions shuffle                  | Pass     |
+| Begin a new game                              | All cards show unflipped (mystery block)| Pass     |
+| Begin a new game                              | Card positions shuffle                  | Pass     |
+| Click a card                                  | Card flips over                         | Pass     |
+| Click two cards                               | Two cards are flipped                   | Pass     |
+| Click on card when two are already flipped    | Card does not flip                      | Pass     |
+| Match two cards                               | Cards remain flipped                    | Pass     |
+| Click on a matched card                       | Nothing                                 | Pass     |
+| Click on a card that is flipped               | Nothing                                 | Pass     |
+| Click two unmatched cards                     | Cards flip back over                    | Pass     |
+
+#### Controls
+
+| Action                                        | Expected Result                         | Pass/Fail|
+| --------------------------------------------- |-----------------------------------------|----------|
+| Click 'New Game' button                       | A new game is started                   | Pass     |
+| Click 'New Game' button                       | The cards reset                         | Pass     |
+| Click 'New Game' button                       | Correct matches counter resets          | Pass     |
+| Click 'New Game' button                       | Game timer resets                       | Pass     |
+| Click 'New Game' button                       | Cards shuffle position                  | Pass     |
+| Click 'How to play' button                    | Shows how to play modal                 | Pass     |
+| Click 'Close' button on how to play modal     | Hides how to play modal                 | Pass     |
+| Click 'Close' button on how to play modal     | Restarts the game                       | Pass     |
+| Click 'Contact Us' button                     | Shows contact modal                     | Pass     |
+| Click 'Close' button on contact modal         | Hides contact modal                     | Pass     |
+| Click 'Close' button on contact modal         | Restarts the game                       | Pass     |
+
+#### Contact Form
+
+| Action                                                     | Expected Result         | Pass/Fail      |
+| -----------------------------------------------------------|-------------------------|----------------|
+| Click submit button when all fields are filled in correctly| Success message shown   | Pass           |
+| Click submit button when all fields are filled in correctly| Email received          | Pass           |
+| Click submit button when all fields are filled in correctly| Form fields cleared     | Pass           |
+| Click submit button when name field is empty               | Error message           | Pass           |
+| Click submit button when email field is empty              | Error message           | Pass           |
+| Click submit button when text area field is empty          | Error message           | Pass           |
+
+#### 404 Page
+
+| Action                                | Expected Result                     | Pass/Fail      |
+| --------------------------------------|-------------------------------------|----------------|
+| Load page                             | Page loads                          | Pass           |
+| Click 'Get out of here' button        | Go back to the game page            | Pass           |
 
 ### Devices
 
