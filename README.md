@@ -67,6 +67,8 @@ This has been achieved by:
 
 The site has been designed to be consistent with the Mario theme; all images, colours and design choices have been made to make the user feel immersed in the world of Mario.
 
+The structure of the site has been designed to ensure simplicity and ease of navigation to suit its intended audience.
+
 All images in this project were sourced from [ClipartMax](https://www.clipartmax.com/).
 
 ### Wireframes
@@ -456,6 +458,17 @@ Google Lighthouse was used to test the page. The page performed well.
 | Click 'Contact Us' button                     | Shows contact modal                     | Pass     |
 | Click 'Close' button on contact modal         | Hides contact modal                     | Pass     |
 | Click 'Close' button on contact modal         | Restarts the game                       | Pass     |
+
+#### Modals
+
+| Action                                     | Expected Result                         | Pass/Fail|
+| ------------------------------------------ |-----------------------------------------|----------|
+| Win a game                                 | Congrats modal shows                    | Pass     |
+| Click 'Play again' button (congrats modal) | Hides the modal                         | Pass     |
+| Click 'Play again' button (congrats modal) | Begins a new game                       | Pass     |
+| Allow timer to run out                     | Game over modal shows                   | Pass     |
+| Click 'Play again' button (game over modal)| Hides the modal                         | Pass     |
+| Click 'Play again' button (game over modal)| Begins a new game                       | Pass     |
 
 #### Contact Form
 
