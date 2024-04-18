@@ -109,6 +109,7 @@ body {
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
+    z-index: 1;
 }
 
 /*this allows the card rotation effect */
