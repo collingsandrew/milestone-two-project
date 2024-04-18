@@ -412,14 +412,19 @@ Google Lighthouse was used to test the page. The page performed well.
 
 #### Game Stats
 
-| Action                                        | Expected Result                   | Pass/Fail|
-| --------------------------------------------- |-----------------------------------|----------|
-| Start the game by flipping the first card     | Game timer begins to count down   | Pass     |
-| Click new game button                         | Game timer resets                 | Pass     |
-| Click play again button (winning modal)       | Game timer resets                 | Pass     |
-| Click play again button (game over modal)     | Game timer resets                 | Pass     |
-| Win a game                                    | Game timer stops                  | Pass     |
-| Lose a game                                   | Game timer stops                  | Pass     |
+| Action                                        | Expected Result                         | Pass/Fail|
+| --------------------------------------------- |-----------------------------------------|----------|
+| Start the game by flipping the first card     | Game timer begins to count down         | Pass     |
+| Click new game button                         | Game timer resets                       | Pass     |
+| Click play again button (winning modal)       | Game timer resets                       | Pass     |
+| Click play again button (game over modal)     | Game timer resets                       | Pass     |
+| Win a game                                    | Game timer stops                        | Pass     |
+| Lose a game                                   | Game timer stops                        | Pass     |
+| Match a pair of cards                         | Correct matches counter increases by 1  | Pass     |
+| Click new game button                         | Correct matches resets to 0             | Pass     |
+| Click play again button (winning modal)       | Correct matches resets to 0             | Pass     |
+| Click play again button (game over modal)     | Correct matches resets to 0             | Pass     |
+
 
 ### Devices
 
@@ -448,6 +453,14 @@ A bug was found that allowed users to interact with elements behind an open moda
 All modals were given a z-index value higher than the overlay div, ensuring they always appear on top. Using JavaScript I added code to the displayModal and hideModal functions so that when a modal is opened, the overlay div is set to 'display: block', effectively blocking user interactions with elements underneath. When the modal is closed, the overlay div is hidden ('display: none'), allowing the user to then interact with the page elements again.
 
 This implementation successfully prevents unintended interactions with background elements while a modal is active, enhancing the user experience.
+
+### Fixed
+
+When testing the site on Safari, I noticed that the card functionality wasn't behaving as expected. Clicking the cards resulted in images becoming disoriented and displaying delayed reactions. To rectify this issue, I incorporated specific webkit styling within the CSS styling for the game cards, these are specific for Safari rendering requirements.
+
+### Fixed
+
+A bug was found where, if a player initiated a game and subsequently accessed the instructions/contact modal, closing the modal after the time expired would enable the user to continue playing the game without the timer. To address this issue, I integrated the newGame function into the modal's close event listeners. Now, whenever the modals are closed, a new game is automatically initiated, thereby resetting the timer.
 
 ## Technologies Used
 
