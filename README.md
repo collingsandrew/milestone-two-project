@@ -51,6 +51,42 @@ The purpose of this project is to provide the user with a website on which they 
 16. I want the option to restart the game.
 17. I want visually appealing card designs and animations, so that the game is enjoyable to play.
 
+### Project Scope
+
+#### The following features will be in scope for this project:
+
+##### Game Mechanics
+
+- A grid of face-down cards that can be flipped over to reveal an image.
+- The ability to match pairs of cards based on identical images.
+- A correct matches tracker to show the user the number of matches they currently have.
+- The functionality to allow the user to reset the game or start over when the game is over.
+
+##### User Interface
+
+- A responsive design that works seamlessly across desktops, tablets, and mobile devices.
+- A clean and intuitive layout that makes the game easy to understand and play.
+- An accessible design to ensure the game is playable by users with varying abilities.
+
+##### Game Progression
+
+- Timer functionality to challenge the player to complete the game as quickly as they can.
+
+##### Other Features
+
+- Game instructions to inform the user of the goal of the game and how to play.
+- A mario theme to enhance the experience and attract users to play and re-visit the game.
+
+This scope defines the boundaries of the project, ensuring that the core functionalities of the memory card game are delivered with a focus on user experience, performance, and accessibility.
+
+#### Possible future implementations currently out of scope include:
+
+- Options to choose different difficulty levels, which adjust the number of cards in play.
+- Tracking the number of moves made by the player.
+- Leaderboards to display top scores and encourage competition.
+- User authentication to save scores and track progress.
+- Background music and sound effects, with options to toggle them on and off.
+
 ## Accessibility
 
 The site has been built with accessibility in mind to ensure that it is always a positive experience.
@@ -496,6 +532,56 @@ Google Lighthouse was used to test the page. The page performed well.
 | --------------------------------------|-------------------------------------|----------------|
 | Load page                             | Page loads                          | Pass           |
 | Click 'Get out of here' button        | Go back to the game page            | Pass           |
+
+### Testing Success Criteria
+
+| Card Matching                                                                              | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| Players must flip over cards to find pairs of matching cards                               |         Y        |
+| Each turn, players can flip two cards                                                      |         Y        |
+| If the cards match, they remain face up; if they do not match, they are flipped back down  |         Y        |
+
+| Game Setup                                                                                 | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| The game should have 16 cards for 8 pairs                                                  |         Y        |
+| Cards should be randomly shuffled at the start of each game to ensure variability          |         Y        |
+
+| Turn Management                                                                            | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| The user should only be able to flip two cards at a time                                   |         Y        |
+
+| Game Management                                                                            | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| The game ends when all pairs have been matched                                             |         Y        |
+| The game ends when the timer runs out                                                      |         Y        |
+| The game cards, counter and timer should reset on each new game                            |         Y        |
+
+| Game Design                                                                                | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| Cards must be clearly visible and distinguishable when flipped                             |         Y        |
+| The game should have a fun and persistent design following the theme                       |         Y        |
+
+| User Interface                                                                             | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| The game should be easy to navigate, self-intuitive, with clear instructions on how to play|         Y        |
+| The game should include a correct match counter for each correct matching pair of cards    |         Y        |
+| The game should include a timer that counts down when the user initiates a game            |         Y        |
+
+| User Interaction                                                                           | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| The game should be fun and engaging, encouraging players to continue playing               |         Y        |
+
+| Responsive Design                                                                          | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| The game should be responsive and functional across different sizes of devices             |         Y        |
+
+| Game Performance                                                                           | Criteria met Y/N | 
+| -------------------------------------------------------------------------------------------|------------------|
+| The game should load quickly, with minimal wait times for players                          |         Y        |
+
+### Project Outcome
+
+Overall, the project successfully meets all client goals and, after extensive testing, fulfills each criterion established for its purpose.
 
 ### Devices
 
