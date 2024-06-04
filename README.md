@@ -371,6 +371,27 @@ Google Lighthouse was used to test the page. The page performed well.
 <img src="./assets/readme/testing/desktop-lighthouse.png">
 </details>
 
+### Testing Responsiveness
+
+Throughout this project, a mobile-first design approach was implemented to ensure the website is responsive on all devices. The modals include a scrollbar, enabling users on smaller screens to scroll through all the content within the modal.
+
+The website was tested on various devices of different sizes, and Google Developer Tools' device toolbar was used to simulate additional devices. As a result, the website successfully provides a responsive and optimal user experience across all devices.
+
+<details>
+<summary>Mobile</summary>
+<img src="./assets/readme/responsive/mobile.png">
+<summary>Mobile with Modal</summary>
+<img src="./assets/readme/responsive/mobile-modal.png">
+<summary>Tablet</summary>
+<img src="./assets/readme/responsive/tablet.png">
+<summary>Tablet with Modal</summary>
+<img src="./assets/readme/responsive/tablet-modal.png">
+<summary>Desktop</summary>
+<img src="./assets/readme/responsive/desktop.png">
+<summary>Desktop with Modal</summary>
+<img src="./assets/readme/responsive/desktop-modal.png">
+</details>
+
 ### Testing User Stories
 
 1. I want the site to be simple to navigate and use.
