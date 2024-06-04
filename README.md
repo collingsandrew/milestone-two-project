@@ -380,14 +380,24 @@ The website was tested on various devices of different sizes, and Google Develop
 <details>
 <summary>Mobile</summary>
 <img src="./assets/readme/responsive/mobile.png">
+</details>
+<details>
 <summary>Mobile with Modal</summary>
 <img src="./assets/readme/responsive/mobile-modal.png">
+</details>
+<details>
 <summary>Tablet</summary>
 <img src="./assets/readme/responsive/tablet.png">
+</details>
+<details>
 <summary>Tablet with Modal</summary>
 <img src="./assets/readme/responsive/tablet-modal.png">
+</details>
+<details>
 <summary>Desktop</summary>
 <img src="./assets/readme/responsive/desktop.png">
+</details>
+<details>
 <summary>Desktop with Modal</summary>
 <img src="./assets/readme/responsive/desktop-modal.png">
 </details>
